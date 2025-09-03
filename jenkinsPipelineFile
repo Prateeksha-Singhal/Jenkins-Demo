@@ -1,1 +1,17 @@
-Sample file created for Jenkins pipeline demo.
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('One') {
+            steps {
+                echo 'Hello World One'
+            }
+        }
+    }
+}
+
